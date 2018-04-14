@@ -10,7 +10,7 @@ export class LoginService {
   constructor(private http: Http) { }
 
   sendCredential(username: string, password: string){
-    let url = "http://localhost:8080/index";
+    let url = "http://localhost:8000/index";
     let params = 'username=' + username + '&password' + password;
     let headers = new Headers(
       {
@@ -23,7 +23,7 @@ export class LoginService {
 
   logout(){
     
-    let url = "http://localhost:8080/logout";
+    let url = "http://localhost:8000/logout";
 
     return this.http.get(url, { withCredentials: true});
   }
