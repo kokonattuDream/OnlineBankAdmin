@@ -11,10 +11,12 @@ import { LoginComponent } from './login/login.component';
 
 import { LoginService } from './login.service';
 import { UserService } from './user.service';
+import { AppointmentService } from './appointment.service';
 
 import { UserAccountComponent } from './user-account/user-account.component';
 import { PrimaryTransactionComponent } from './primary-transaction/primary-transaction.component';
 import { SavingsTransactionComponent } from './savings-transaction/savings-transaction.component';
+import { AppointmentComponent } from './appointment/appointment.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { SavingsTransactionComponent } from './savings-transaction/savings-trans
     LoginComponent,
     UserAccountComponent,
     PrimaryTransactionComponent,
-    SavingsTransactionComponent
+    SavingsTransactionComponent,
+    AppointmentComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ import { SavingsTransactionComponent } from './savings-transaction/savings-trans
   ],
   providers: [
     LoginService,
-    UserService
+    UserService,
+    AppointmentService
   ],
   bootstrap: [AppComponent]
 })

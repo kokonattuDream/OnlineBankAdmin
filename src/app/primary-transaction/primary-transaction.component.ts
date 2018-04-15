@@ -15,9 +15,7 @@ export class PrimaryTransactionComponent implements OnInit {
   constructor(private route: ActivatedRoute, private userService: UserService) {
       this.route.params.forEach((params: Params) =>{
         this.username = params['username'];
-      }
-    );
-
+      });
     this.getPrimaryTransactionList();
    }
 
